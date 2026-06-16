@@ -1,35 +1,3 @@
-"""
-Last-Mile Delivery Cost Model
-=============================
-Transparent, editable cost model for comparing van vs drone last-mile delivery.
-
-IMPORTANT — read before trusting any number this produces:
-Every cost output is a MODELED ESTIMATE, not a real measured cost. No public API
-returns a company's actual per-delivery cost — that data is internal. This model
-applies published industry benchmarks to real route distances to produce
-defensible *estimates*. All defaults are cited and user-editable.
-
-----------------------------------------------------------------------
-CITED BENCHMARKS (defaults — all user-editable)
-----------------------------------------------------------------------
-VAN / GROUND LAST-MILE:
-  - US last-mile cost ~$10.10/package; last mile ~53% of shipping cost.
-      Source: Capgemini Research Institute last-mile studies.
-  - Labor (driver) dominates: ~50-60% of last-mile cost. Fuel ~10-15%.
-      Source: industry cost-structure breakdowns (McKinsey, Capgemini).
-
-DRONE DELIVERY (estimates vary widely — that's the core insight):
-  - Academic: ~$13.50/drone delivery vs ~$2/vehicle. (UMSL, via AP 2025)
-  - Zipline claim: "sub $3" vs $16-20 traditional. (Zipline CEO)
-  - Manna (only profitable operator): ~$4/flight, projecting $1 at scale. (DroneXL)
-  - US DOT theoretical floor: ~$0.88/delivery; LARGEST variable is drones
-    managed per operator. (US DOT ITS)
-
-KEY INSIGHT baked into the model: drone cost is dominated by the
-operator-to-drone ratio, NOT distance or energy. This is why Manna
-(1 operator : ~20 drones) is profitable and Amazon was not.
-----------------------------------------------------------------------
-"""
 
 from dataclasses import dataclass, asdict
 
