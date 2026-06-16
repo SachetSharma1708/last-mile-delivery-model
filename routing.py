@@ -1,18 +1,4 @@
-"""
-Routing & Geocoding (OpenRouteService)
-=====================================
-Pulls REAL distance and drive-time data between ZIP codes.
 
-This is the genuinely "real data" part of the tool.
-
-Setup:
-  1. Free API key: https://openrouteservice.org/dev/#/signup
-  2. Set env var ORS_API_KEY=your_key  (or paste into the app sidebar)
-
-Free tier: ~2,000 requests/day. Results are cached per session.
-
-Requires: requests
-"""
 
 import os
 import math
