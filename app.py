@@ -1,15 +1,5 @@
 """
 Last-Mile Delivery Cost Modeler (US)
-====================================
-Compare van vs drone last-mile delivery economics across your delivery ZIP codes.
-
-WHAT'S REAL vs WHAT'S MODELED:
-  ✅ REAL (APIs):    road distances & drive times (OpenRouteService),
-                     straight-line drone distances (computed)
-  📊 MODELED:        all cost figures, grounded in cited benchmarks, editable
-  🤖 ADVISORY (LLM): qualitative feasibility guidance (NVIDIA NIM)
-
-Produces ESTIMATES for scenario planning — not ground-truth costs.
 
 Author: Sachet
 """
